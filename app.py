@@ -64,7 +64,7 @@ if user_question:
     import openai
     import os
 
-    openai.api_key = st.secrets["OPENAI_API_KEY"]
+    openai.api_key = st.secrets["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"]
 
     # Reduce sample size to avoid long prompts
     df_sample = filtered_df.head(100).to_csv(index=False)
