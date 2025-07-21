@@ -1,6 +1,7 @@
-superstore_dashboard/
-├── app.py
-├── requirements.txt
-├── README.md
-└── .streamlit/
-    └── secrets.toml
+streamlit
+pandas
+plotly
+openai
+httpx
+tqdm
+pydantic
