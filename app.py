@@ -57,10 +57,10 @@ st.markdown("### 🤖 Ask a Question (LLM-Powered Insights)")
 user_question = st.text_input("Ask something like: 'Which category is most profitable?' or 'Trend of sales in West region?'")
 
 if user_question:
-    # Use OpenAI v1 client
-    client = OpenAI(api_key=st.secrets["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"])  # OR replace with hardcoded key for testing
+    # ✅ Hardcoded API key (only for local testing)
+    client = OpenAI(api_key="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")
 
-    # Prepare sample + prompt
+    # Prompt logic
     df_sample = filtered_df.head(100).to_csv(index=False)
     prompt = f"""You are a smart data analyst. Here's a sample of a dataset:\n{df_sample}\n\nAnswer the following question about this dataset:\n{user_question}"""
 
