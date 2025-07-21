@@ -1,3 +1,6 @@
-streamlit
-pandas
-plotly
+superstore_dashboard/
+├── app.py
+├── requirements.txt
+├── README.md
+└── .streamlit/
+    └── secrets.toml
